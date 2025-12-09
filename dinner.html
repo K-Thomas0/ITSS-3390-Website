@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Recipes - Bitchin' Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="ivy.png" alt="" class="floral-decoration floral-left">
+            <a href="index.html" class="header-logo-link">
+                <h1 class="site-title">Bitchin' Bakery</h1>
+            </a>
+            <img src="ivy.png" alt="" class="floral-decoration floral-right">
+        </div>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">All Recipes</a></li>
+                    <li><a href="breakfast.html" class="nav-link">Breakfast</a></li>
+                    <li><a href="lunch.html" class="nav-link">Lunch</a></li>
+                    <li><a href="dinner.html" class="nav-link active">Dinner</a></li>
+                    <li><a href="snacks.html" class="nav-link">Snacks</a></li>
+                    <li><a href="desserts.html" class="nav-link">Desserts</a></li>
+                </ul>
+                <div class="nav-search">
+                    <input type="text" id="headerSearchInput" placeholder="Search recipes...">
+                    <button type="button" class="search-btn">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="content-wrapper">
+                <section class="category-page-header">
+                    <h2 class="section-title">Dinner Recipes</h2>
+                    <p class="category-description">Hearty and budget-friendly dinner recipes that are easy to make and perfect for feeding yourself or a crowd.</p>
+                </section>
+
+                <div id="recipesContainer" class="recipes-grid">
+                    <!-- Recipes will be dynamically inserted here -->
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No recipes found. Try a different search!</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>So hot right now</h3>
+                    <div id="trendingRecipes" class="trending-list">
+                        <!-- Trending recipes will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Bitchin' Bakery Classics</h3>
+                    <div id="classicRecipes" class="classic-list">
+                        <!-- Classic recipes will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="sidebar-widget logo-widget">
+                    <img src="logo.png" alt="Bitchin' Bakery Logo" class="logo-widget-image">
+                    <p class="logo-widget-text">Your go-to spot for flavorful, budget-friendly bakes.</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>About the Baker</h3>
+                    <p>We're all about flavor over fluff – no complicated recipes here. Find quick, easy, and budget-friendly recipes that become timeless favorites for students and budget-conscious cooks. This site is where we break down the best baking techniques into digestible, tasty little nuggets to encourage, educate and empower you as a home baker.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="#" class="footer-contact">Contact</a>
+                <p class="footer-copyright">&copy; 2024 Bitchin' Bakery</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="category-page.js"></script>
+    <script>
+        initializeCategoryPage('dinner');
+    </script>
+</body>
+</html>
+
